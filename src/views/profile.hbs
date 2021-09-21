@@ -1,0 +1,47 @@
+<div data-maindiv='{{userId}}' class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="" class="card-img" alt="user foto">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{userName}} {{userSurname}}</h5>
+        <p class="card-text"><small class="text-muted">Год выпуска: {{finishYear}}</small></p>
+        <p class="card-text"><small class="text-muted">Соц. сети: {{userLinks}}</small></p>
+
+        <button type="button" class="btn btn-secondary">Редактировать</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="/review"><button type="button" class="addfeedback btn btn-success">Оставить отзыв</button></a>
+<div class="profileContent container py-3">
+  {{#each userFeedBacks}}
+  <div class="card mb-3" style="width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Компания: {{this.company}}</h5>
+          <p class="card-text"><small class="text-muted">Дата собеседования: {{this.dateOfInterview}}</small></p>
+          <p class="card-text"><small class="text-muted">Вакансия: {{this.positionName.name}}</small></p>
+          <p class="card-text"><small class="text-muted">Стек: {{this.technologies.name}}</small></p>
+          <p class="card-text">Тех вопросы: {{this.techquestions}}</p>
+          <p class="card-text">Общие вопросы: {{this.generalquestions}}</p>
+          <p class="card-text">Комментарии: {{this.comments}}</p>
+
+          <button data-edit='{{this._id}}' type="button" class="btn btn-secondary">Редактировать</button>
+          <button data-delete='{{this._id}}' type="button" class="btn btn-primary">Удалить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+
+
+
+<link rel="stylesheet" href="/css/profileStyle.css">
+<script defer src="/js/editFeedBacks.js"></script>
+<script defer src="/js/editProfile.js"></script>

@@ -1,0 +1,56 @@
+<h3>Редактирование</h3>
+<form name="updateform" id= "{{userId}}">
+    <div class="mb-3">
+        <input name="name" type="text" class="form-control" value="{{userName}}" placeholder="Name" >
+    </div>
+    <div class="mb-3">
+        <input name="surname" type="text" class="form-control" value="{{userSurname}}" placeholder="Surname"  >
+    </div>
+    <div class="mb-3">
+        <input name="phone" type="text" class="form-control" value="{{userPhone}}" placeholder="Phone Number">
+    </div>
+    <div class="mb-3">
+        <input name="email" type="text" class="form-control" value="{{userEmail}}" placeholder="Email" >
+    </div>
+
+    <select name="program" class="form-select" aria-label="Default select example">
+        <option selected>Программа формат обучения</option>
+        <option value="1">Оффлайн МСК</option>
+        <option value="2">Оффлайн Санкт-Петербург</option>
+        <option value="3">Онлайн МСК</option>
+        <option value="3">Онлайн Санкт-Петербург</option>
+    </select>
+
+     <select name="groupName" class="form-select" aria-label="Default select example">
+        <option selected>Название группы</option>
+        <option value="1">Медведи</option>
+        <option value="2">Еноты</option>
+        <option value="3">Волки</option>
+        <option value="4">Лисы</option>
+        <option value="5">Орлы</option>
+        <option value="6">Совы</option>
+        <option value="7">Ежи</option>
+        <option value="8">Пчёлы</option>
+        <option value="9">Бобры</option>
+        <option value="10">Барсы</option>
+        <option value="11">Песец</option>
+        <option value="12">Тигры</option>
+        <option value="13">Киты</option>
+        <option value="14">Сойки</option>
+        <option value="15">Рыси</option>
+    </select>
+
+    <div class="mb-3">
+        <input name="year" type="date" class="form-control" placeholder="Год обучения" >
+    </div>
+
+<div class="input-group mb-3">
+    <input name="links" type="text" class="form-control" placeholder="ссылка на соц.cети" aria-label="Recipient's username" value="{{userLinks}}" aria-describedby="button-addon2" >
+</div>
+
+     <button type="submit" class="btn btn-secondary">Update</button>
+
+</form>
+
+<script defer src="/js/editProfile.js"></script>
+

@@ -1,0 +1,38 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Делитесь опытом!</h1>
+    <p class="lead">Оставляйте отзыв о компании, в которой вы проходили собеседование</p>
+    <p class="lead">Изучайте отзывы ваших коллег перед собеседованием</p>
+  </div>
+</div>
+
+{{!-- <h2>Делитесь опытом!</h2>
+<h3>Оставляйте отзыв о компании, в которой вы проходили собеседование</h3> --}}
+{{!-- <h3>Изучайте отзывы ваших коллег перед собеседованием</h3> --}}
+<a href="/review"><button type="button" class="addfeedback btn btn-success">Оставить отзыв</button></a>
+<hr>
+<h3 style="padding-top: 5%">Отзывы</h3>
+
+<div class="profileContent container py-2">
+    {{#each allFeedbacks}}
+    <div class="card mb-3" style="width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Компания: {{this.company}}</h5>
+                    <p class="card-text"><small class="text-muted">Дата собеседования: {{this.dateOfInterview}}</small></p>
+                    <p class="card-text"><small class="text-muted">Вакансия: {{this.positionName.name}}</small></p>
+                    <p class="card-text"><small class="text-muted">Стек: {{this.technologies.name}}</small></p>
+                    <p class="card-text"><small class="text-muted">Автор отзыва: {{this.author.name}} {{this.author.surname}}</small></p>
+
+                    <p class="card-text">Тех вопросы: {{this.techquestions}}</p>
+                    <p class="card-text">Общие вопросы: {{this.generalquestions}}</p>
+                    <p class="card-text">Комментарии: {{this.comments}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+<link rel="stylesheet" href="/css/profileStyle.css">

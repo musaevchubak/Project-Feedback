@@ -1,0 +1,46 @@
+<div class="container">
+    <h3>Редактирование</h3>
+</div>
+<form id="{{selectedFeedBack._id}}" name="editFeedBackForm">
+  <div class="mb-3">
+    <input name="company" class="form-control" value="{{selectedFeedBack.company}}" type="text"
+      placeholder="Название компании">
+  </div>
+  <div class="mb-3">
+    <input name="dateOfInterview" class="form-control" value="{{selectedFeedBack.dateOfInterview}}" type="date"
+      placeholder="Дата собеседования">
+  </div>
+  <div class="mb-3">
+    <input name="positionName" class="form-control" value="{{selectedFeedBack.positionName.name}}" type="text"
+      placeholder="Вакансия">
+  </div>
+  <div class="mb-3">
+    <input name="locationOfCompany" class="form-control" value="{{selectedFeedBack.locationOfCompany}}" type="text"
+      placeholder="Город компании">
+  </div>
+  <div class="mb-3">
+    <input name="technologies" class="form-control" value="{{selectedFeedBack.technologies.name}}" type="text"
+      placeholder="Стек">
+  </div>
+  <div class="mb-3">
+    <input name="techquestions" class="form-control" value="{{selectedFeedBack.techquestions}}" type="text"
+      placeholder="Технические вопросы">
+  </div>
+  <div class="mb-3">
+    <input name="generalquestions" class="form-control" value="{{selectedFeedBack.generalquestions}}" type="text"
+      placeholder="Общие вопросы">
+  </div>
+  <div class="mb-3">
+    <div class="form-floating">
+      <textarea name="comments" class="form-control" id="floatingTextarea2" style="height: 100px">{{selectedFeedBack.comments}}</textarea>
+      <label for="floatingTextarea2">Комментарии</label>
+    </div>
+  </div>
+  <div class="d-grid gap-2" style="width: 5em;">
+    <button class="btn btn-primary" type="submit">Сохранить</button>
+  </div>
+</form>
+
+
+
+<script defer src="/js/editFeedBacks.js"></script>

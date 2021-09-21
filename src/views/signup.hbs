@@ -1,0 +1,66 @@
+<h3>Регистрация</h3>
+<form action="/user/signUp" method="POST" class="">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Имя</label>
+        <input name="name" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Фамилия</label>
+        <input name="surname" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Телефон</label>
+        <input name="phone" type="number" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input name="email" type="email" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Пароль</label>
+        <input name="password" type="password" class="form-control">
+    </div>
+    <div class="mb-3">
+        <select name="program" class="form-select" aria-label="Default select example">
+            <option selected>Программа, формат обучения</option>
+            <option value="1">Оффлайн МСК</option>
+            <option value="2">Оффлайн Санкт-Петербург</option>
+            <option value="3">Онлайн МСК</option>
+            <option value="3">Онлайн Санкт-Петербург</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <select name="groupName" class="form-select" aria-label="Default select example">
+            <option selected>Название группы</option>
+            <option value="1">Медведи</option>
+            <option value="2">Еноты</option>
+            <option value="3">Волки</option>
+            <option value="4">Лисы</option>
+            <option value="5">Орлы</option>
+            <option value="6">Совы</option>
+            <option value="7">Ежи</option>
+            <option value="8">Пчёлы</option>
+            <option value="9">Бобры</option>
+            <option value="10">Барсы</option>
+            <option value="11">Песец</option>
+            <option value="12">Тигры</option>
+            <option value="13">Киты</option>
+            <option value="14">Сойки</option>
+            <option value="15">Рыси</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <input name="year" type="date" class="form-control" placeholder="Год обучения">
+    </div>
+
+    <div class="input-group mb-3">
+        <input name="links" type="text" class="form-control" placeholder="Ссылка на соц.cети"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+    </div>
+
+    <div class="d-grid gap-2">
+        <button class="btn btn-success" type="submit">Зарегистрироваться</button>
+    </div>
+
+</form>

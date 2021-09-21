@@ -1,0 +1,44 @@
+<div class="container">
+    <h3>Оставь отзыв</h3>
+</div>
+<form action="/review" method="POST">
+
+    <div class="mb-3">
+        <input name="company" class="form-control" type="text" placeholder="Название компании">
+    </div>
+
+    <div class="mb-3">
+
+        <input name="dateOfInterview" class="form-control" type="date" placeholder="Дата собеседования">
+    </div>
+    <div class="mb-3">
+
+        <input name="positionName" class="form-control" type="text" placeholder="Вакансия">
+    </div>
+    <div class="mb-3">
+
+        <input name="locationOfCompany" class="form-control" type="text" placeholder="Город компании">
+    </div>
+    <div class="mb-3">
+
+        <input name="technologies" class="form-control" type="text" placeholder="Стек">
+    </div>
+    <div class="mb-3">
+
+        <input name="techquestions" class="form-control" type="text" placeholder="Технические вопросы">
+    </div>
+    <div class="mb-3">
+
+        <input name="generalquestions" class="form-control" type="text" placeholder="Общие вопросы">
+    </div>
+    <div class="mb-3">
+        <div class="form-floating">
+            <textarea name="comments" class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Комментарии</label>
+        </div>
+    </div>
+
+    <div class="d-grid gap-2">
+        <button class="btn btn-success" type="submit">Оставить отзыв</button>
+    </div>
+</form>

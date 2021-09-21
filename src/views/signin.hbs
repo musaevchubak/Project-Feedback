@@ -1,0 +1,20 @@
+
+
+<h2>Войдите в систему</h2>
+<form action="/user/signIn" method="POST">
+    <div class="form-floating mb-3">
+        <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+    </div>
+    <div class="mb-3">
+        <p>Нет профиля? <a href="/user/signUp">Зарегистрируйтесь!</a></p>
+    </div>
+    <div class="mb-3">
+        <button class="btn btn-success" type="submit">Войти в систему</button>
+    </div>
+
+</form>
